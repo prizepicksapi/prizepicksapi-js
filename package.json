@@ -1,0 +1,44 @@
+{
+  "name": "prizepicksapi",
+  "version": "0.1.0",
+  "description": "JavaScript/TypeScript client for prizepicksapi.com: live PrizePicks lines, goblin and demon tiers, line history and graded results.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/"
+  },
+  "keywords": [
+    "prizepicks",
+    "player props",
+    "dfs",
+    "pickem",
+    "sports data",
+    "api"
+  ],
+  "author": "Stunning Couches LLC <support@prizepicksapi.com>",
+  "license": "MIT",
+  "homepage": "https://prizepicksapi.com/docs",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prizepicksapi/prizepicksapi-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prizepicksapi/prizepicksapi-js/issues"
+  }
+}
