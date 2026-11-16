@@ -1,6 +1,12 @@
-# prizepicksapi (JavaScript / TypeScript)
+# PrizePicks API for JavaScript and TypeScript: prizepicksapi
 
-Client for [prizepicksapi.com](https://prizepicksapi.com): live PrizePicks player-prop lines, goblin and demon tiers per selection, recorded line history, the change feed, graded results and game logs. Zero dependencies, ESM, TypeScript types included, Node 18+ (also Deno and Bun).
+The PrizePicks API client for Node.js, TypeScript, Deno and Bun. `npm install prizepicksapi` and read live PrizePicks projections (player-prop lines), goblin and demon tiers, line history and graded results with typed responses.
+
+[Website](https://prizepicksapi.com/?utm_source=github&utm_medium=readme&utm_campaign=prizepicksapi-js) | [Docs](https://prizepicksapi.com/docs?utm_source=github&utm_medium=readme&utm_campaign=prizepicksapi-js) | [Free API key](https://prizepicksapi.com/sign-up?utm_source=github&utm_medium=readme&utm_campaign=prizepicksapi-js) | [Pricing](https://prizepicksapi.com/pricing?utm_source=github&utm_medium=readme&utm_campaign=prizepicksapi-js) | [All SDKs](https://prizepicksapi.com/sdks?utm_source=github&utm_medium=readme&utm_campaign=prizepicksapi-js)
+
+Also for prizepicksapi.com: [Python: `pip install prizepicksapi`](https://github.com/prizepicksapi/prizepicksapi-python) | [MCP server: `npx -y prizepicksapi-mcp`](https://github.com/prizepicksapi/prizepicksapi-mcp)
+
+Client for [prizepicksapi.com](https://prizepicksapi.com/?utm_source=github&utm_medium=readme&utm_campaign=prizepicksapi-js): live PrizePicks player-prop lines, goblin and demon tiers per selection, recorded line history, the change feed, graded results and game logs. Zero dependencies, ESM, TypeScript types included, Node 18+ (also Deno and Bun).
 
 prizepicksapi.com is an independent service operated by Stunning Couches LLC. It is not affiliated with or endorsed by PrizePicks.
 
@@ -34,7 +40,7 @@ NBA:8 NFL:2 NHL:2
 
 ## Live data
 
-Get a free key (100 credits a month, no card) at https://prizepicksapi.com/sign-up. Keep it on your server; never ship it to a browser.
+Get a free key (100 credits a month, no card) at https://prizepicksapi.com/sign-up?utm_source=github&utm_medium=readme&utm_campaign=prizepicksapi-js. Keep it on your server; never ship it to a browser.
 
 ```js
 import {PrizePicksAPI, RateLimitError} from 'prizepicksapi';
@@ -72,7 +78,7 @@ try {
 
 Errors are `PrizePicksAPIError` with `status`, the API's stable `code` and `retryAfter`. Per-minute 429s (`RATE_LIMIT_EXCEEDED`) and 503s retry up to `maxRetries` times using `Retry-After`; `MONTHLY_QUOTA_EXCEEDED` throws at once.
 
-Reference: https://prizepicksapi.com/docs, https://prizepicksapi.com/openapi.json. Plans: https://prizepicksapi.com/pricing.
+Reference: https://prizepicksapi.com/docs?utm_source=github&utm_medium=readme&utm_campaign=prizepicksapi-js, https://prizepicksapi.com/openapi.json. Plans: https://prizepicksapi.com/pricing?utm_source=github&utm_medium=readme&utm_campaign=prizepicksapi-js.
 
 ## Tests
 
